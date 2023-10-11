@@ -1,0 +1,30 @@
+{
+  "name": "codercoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdearden4/codercoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdearden4/codercoder/issues"
+  },
+  "homepage": "https://github.com/jdearden4/codercoder#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "chalk": "^5.3.0",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.2"
+  }
+}
