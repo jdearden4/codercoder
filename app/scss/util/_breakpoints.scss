@@ -1,0 +1,32 @@
+@use 'functions' as f; //import functions
+
+//700px, 900px, 1440px
+$breakpoints-up: (
+    "medium": f.em(700),
+    "large": f.em(900),
+    "xlarge": f.em(1440),
+);
+
+//699.98px, 899.98px, 1439.98px; bootstrap does the .02
+//sass map
+$breakpoints-down: (
+    "small": f.em(699.98),
+    "medium": f.em(899.98),
+    "large": f.em(1439.98),
+);
+
+//we will then have availability to say medium / large  / xlarge
+//creates a media query
+@mixin breakpoint($size) {
+    //map-get function takes name we're getting data from and the key
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    //map-get function takes name we're getting data from and the key
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
