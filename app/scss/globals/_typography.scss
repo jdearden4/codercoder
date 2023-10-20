@@ -7,13 +7,27 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40)); //viewport width
+    font-size: u.rem(42);
+    // font-size: clamp(u.rem(40), 1.77rem+ 3.64vw, u.rem(72)); //viewport width
     //clamp function, can set min and max
     //min, preferred value, max
+
+    @include u.breakpoint(medium) {
+        font-size: u.rem(60);
+    }
+
+    @include u.breakpoint(large) {
+        font-size: u.rem(72);
+    }
 }
 
 h2 {
-    font-size: clamp(u.rem(22), u.rem(14) + 2vw, u.rem(36)); //viewport width
+    font-size: u.rem(36);
+    font-size: clamp(u.rem(36), 1.91rem + 1.45vw, u.rem(48)); //viewport width
+}
+
+h3 {
+    font-size: u.rem(24);
 }
 
 p {
@@ -24,3 +38,4 @@ p {
 a, a:visited, a:active {
     text-decoration: none;
 }
+
