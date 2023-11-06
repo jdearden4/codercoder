@@ -6,11 +6,17 @@
     --hero-bg: hsl(232, 58%, 55%);
     --header-bg: hsl(232, 58%, 55%);
     --button-primary-bg: hsl(180, 100%, 42%);
-    --button-primary-text: hsl(233, 14%, 25%);
+    --button-primary-bg-hover: hsl(180, 100%, 37%, 1);
+    --button-primary-txt: hsl(233, 14%, 25%);
     --button-secondary-bg: transparent;
+    --button-secondary-bg-hover: hsl(0, 0%, 100%, 1);
+    --button-secondary-text: hsl(0, 0%, 100%, 1);
+    --button-secondary-text-hover: var(--hero-bg);
     --button-secondary-border: hsl(0, 0%, 100%);
-    --button-primary-text: hsl(0, 0%, 100%);
     --fullwidth-bg: hsl(300, 85%, 41%);
+    --button-cta-bg: hsl(0, 0%, 100%, 1);
+    --button-cta-text: hsl(0, 0%, 100%, 1);
+    --button-cta-bg: hsl(0, 0%, 100%, 1);
 }
 
 .magenta {
