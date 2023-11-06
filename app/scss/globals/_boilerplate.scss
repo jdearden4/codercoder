@@ -17,6 +17,10 @@ body {
     color: var(--text-color);
 }
 
+img {
+    display: block;
+}
+
 //for screenreaders
 .visually-hidden {
     position: absolute;
