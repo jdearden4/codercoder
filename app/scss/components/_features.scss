@@ -1,6 +1,22 @@
 @use '../util/' as u;
 
+//flexbox intrinsic
 .features {
+    // &__wrapper {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     gap: 40px 5.5%; //row gap is 40px, 5.5% is the column gap
+    // }
+    // &__item {
+    //     flex: 0 1 u.rem(346); //do not grow, shrink equally
+    //     text-align: center;
+
+    //     @include u.breakpoint(large) {
+    //         text-align: start;
+    //     }
+    // }
+    //flexbox approach
     &__wrapper {
         display: flex;
         gap: 40px;
@@ -21,7 +37,7 @@
 
         }
     }
-    &__icon {
+     &__icon {
         margin-block-end: 10px;
         width: auto;
         height: u.rem(48);
@@ -38,3 +54,4 @@
         max-width: 50ch;
     }
 }
+
