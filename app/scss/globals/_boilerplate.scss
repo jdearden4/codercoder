@@ -23,6 +23,10 @@ img {
     height: auto;
 }
 
+figure, blockquote {
+    margin: 0;
+}
+
 //for screenreaders
 .visually-hidden {
     position: absolute;
