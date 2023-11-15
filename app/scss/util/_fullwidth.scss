@@ -1,0 +1,19 @@
+@use 'functions' as f;
+
+//loaded with global styles
+@mixin fullwidth {
+    color: var(--text-light);
+    text-align: center;
+
+    &__description {
+        margin-block-end: f.rem(40);
+        max-width: 70ch;
+        margin-inline: auto;
+    }
+}
+
+//gets overriden since the wrapper
+//block class is loaded after
+// %fullwidth-wrapper {
+//     padding-block: 120px;
+// }
