@@ -27,6 +27,16 @@ figure, blockquote {
     margin: 0;
 }
 
+header ul, footer ul { //any ul tag in the header or footer
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+
+    }
+}
+
 //for screenreaders
 .visually-hidden {
     position: absolute;
@@ -43,5 +53,11 @@ figure, blockquote {
         background-color: #fff;
         padding: 0.5rem;
         border: 1px solid;
+    }
+}
+
+.hover-fade {
+    &:hover {
+        opacity: .9;
     }
 }

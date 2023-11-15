@@ -37,8 +37,6 @@
 
     &__links {
         display: flex;
-        padding: 0;
-        margin: 0;
         text-transform: uppercase;
         gap: 20px;
 
@@ -46,11 +44,6 @@
         @include u.breakpoint(large) {
             gap: 40px;
         }
-
-    }
-
-    &__item {
-        list-style-type: none;
 
     }
 

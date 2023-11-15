@@ -1,0 +1,73 @@
+@use '../util/' as u;
+
+.footer {
+    $b: &;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: u.rem(40) u.rem(20); //space between rows and then columns
+
+        @include u.breakpoint(medium) {
+            grid-template-columns: repeat(4, auto);
+
+        }
+    }
+    &__logo {
+        grid-column: 1 / -1; //takes up the entire row
+
+    }
+    &__logo-image {
+        width: 8rem;
+        margin-block-end: u.rem(10);
+    }
+    &__copyright {
+        line-height: 1;
+        margin-block-end: 0;
+    }
+    &__homelink {
+        display: block;
+        width: fit-content;
+    }
+    &__column {
+
+    }
+    &__column-title {
+        font-size: u.rem(22);
+        line-height: 1.1;
+        margin-block-end: u.rem(18);
+    }
+    &__links {
+        display: grid;
+        gap: u.rem(10); //between links, better than margin since no space on top or bottom
+
+
+    }
+    &__link {
+        // display: inline-block; //top and bottom margins take effect
+                                //only the size of the element inside
+        display: inline-flex;
+        align-items: center;
+        gap: u.rem(16);
+        font-size: u.rem(18);
+        line-height: 1;
+        color: var(--text-dark);
+        &:hover {
+            color: var(--text-link-hover);
+
+            #{$b}__social-path {
+                fill: var(--text-link-hover);
+
+            }
+        }
+    }
+    &__item {
+        
+    }
+    &__social {
+        width: u.rem(18); //do not need to set height of auto with svg
+    }
+    &__social-path {
+        fill: var(--text-dark);
+    }
+}
